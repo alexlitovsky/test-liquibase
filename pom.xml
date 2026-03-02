@@ -4,22 +4,32 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.alexlitovsky</groupId>
+		<groupId>io.github.alterioncorp</groupId>
 		<artifactId>parent-pom</artifactId>
-		<version>1.0.2</version>
+		<version>1.0.0</version>
 	</parent>
 
 	<artifactId>test-liquibase</artifactId>
 	<version>1.0.1</version>
 	<packaging>jar</packaging>
 
+	<name>test-liquibase</name>
+	<description>Utility library for applying Liquibase changelogs in tests.</description>
+	<url>https://github.com/alterioncorp/test-liquibase</url>
 
-	<distributionManagement>
-		<repository>
-			<id>github</id>
-			<url>https://maven.pkg.github.com/alexlitovsky/test-liquibase</url>
-		</repository>
-	</distributionManagement>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git:git://github.com/alterioncorp/test-liquibase.git</connection>
+		<developerConnection>scm:git:ssh://github.com/alterioncorp/test-liquibase.git</developerConnection>
+		<url>https://github.com/alterioncorp/test-liquibase</url>
+	</scm>
 
 	<dependencies>
 		<dependency>
@@ -29,7 +39,7 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
