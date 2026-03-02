@@ -21,7 +21,7 @@ public class LiquibaseUtils {
 	 * @param changeLogPath classpath-relative path to the Liquibase changelog file
 	 * @throws RuntimeException if Liquibase fails to apply the changelog
 	 */
-	public static void initTestDb(Connection connection, String changeLogPath) {
+	public static void update(Connection connection, String changeLogPath) {
 
 		try {
 			Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(new JdbcConnection(connection));
