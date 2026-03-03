@@ -31,6 +31,13 @@
 		<url>https://github.com/alterioncorp/test-liquibase</url>
 	</scm>
 
+	<distributionManagement>
+		<snapshotRepository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/alterioncorp/test-liquibase</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.liquibase</groupId>
